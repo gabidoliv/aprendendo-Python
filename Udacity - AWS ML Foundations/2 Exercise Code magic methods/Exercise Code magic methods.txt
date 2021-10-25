@@ -1,0 +1,3 @@
+https://video.udacity-data.com/topher/2021/April/60784b46_numbers/numbers.txt
+
+https://video.udacity-data.com/topher/2021/April/60784b2e_magic-methods/magic-methods.ipynb
