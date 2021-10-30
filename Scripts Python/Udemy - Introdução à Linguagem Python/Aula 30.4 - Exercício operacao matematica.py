@@ -31,3 +31,5 @@ if sinal == '/':
         print(divisao(num1,num2))
     except:
         print("Não é permitida divisão por zero")
+else:
+    print("Sinal inválido")
