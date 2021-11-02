@@ -17,9 +17,9 @@ print(3 + 32 + -15 // 2) #27
 '''
 
 #option 2:
-'''
-print((17 - 6)%(5 + 2)) #4 Boa opção - os espacos contribuem para leitura
 
+print((17 - 6)%(5 + 2)) #4 Boa opção - os espacos contribuem para leitura
+'''
 print(17 - 6 % 5 + 2) #18
 '''
 
@@ -32,8 +32,8 @@ print((1 + 2 + 4)/13)
 '''
 
 #option 4:
-'''
-print(4/2 - 7*7) #-47.0 Boa opção
 
+print(4/2 - 7*7) #-47.0 Boa opção
+'''
 print((4/2) - (7*7)) #-47.0
 '''
