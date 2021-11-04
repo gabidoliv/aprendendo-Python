@@ -19,3 +19,13 @@ print(udacity_length)
 
 #A diferença entre len e print é que len retorna um valor que pode ser armazenado em uma variável
 #Built-in significa que Python fornece a função
+print(len(first_word))
+
+# index para strings
+print(first_word[0])
+print(first_word[1])
+
+print(len("ababa"))
+print(len("ab"))
+
+print(len("ababa") / len("ab") ) #Como len retorna um inteiro, é possível fazer divisão
