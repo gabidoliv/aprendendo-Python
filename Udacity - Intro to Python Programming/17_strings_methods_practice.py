@@ -21,8 +21,22 @@ print('The length of the string variable verse is: {}'.format(verse_length))
 print("The index of the first occurrence of the word 'and' in verse: ", verse.find('and'))
 print("The index of the first occurrence of the word 'and' in verse: {}".format(verse.find('and')))
 
-print("The index of the last occurrence of the word 'you' in verse: ", verse.find('you', 362))
-print("The index of the last occurrence of the word 'you' in verse: {}".format(verse.find('you')))
+print("The index of the last occurrence of the word 'you' in verse: ", verse.rfind('you'))
+print("The index of the last occurrence of the word 'you' in verse: {}".format(verse.rfind('you')))
 
 print("The count of occurrences of the word 'you' in the verse: ", verse.count('you'))
 print("The count of occurrences of the word 'you' in the verse: {}".format(verse.count('you')))
+
+'''
+message = "Verse has a length of {} characters.\nThe first occurence of the \
+word 'and' occurs at the {}th index.\nThe last occurence of the word 'you' \
+occurs at the {}th index.\nThe word 'you' occurs {} times in the verse."
+
+length = len(verse)
+first_idx = verse.find('and')
+last_idx = verse.rfind('you')
+count = verse.count('you')
+
+print(message.format(length, first_idx, last_idx, count))
+
+'''
