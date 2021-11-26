@@ -6,20 +6,20 @@ Use this information to take the amount of a purchase and
 the corresponding state to assure that they are taxed by the right
 amount.
 '''
-state = #Either CA, MN, or NY
-purchase_amount = #amount of purchase
+state = 'CA' #Either CA, MN, or NY
+purchase_amount = 100 #amount of purchase
 
-if #provide conditional for checking state is CA
+if state == 'CA': #provide conditional for checking state is CA
     tax_amount = .075
     total_cost = purchase_amount*(1+tax_amount)
     result = "Since you're from {}, your total cost is {}.".format(state, total_cost)
 
-elif #provide conditional for checking state is MN
+elif state == 'MN': #provide conditional for checking state is MN
     tax_amount = .095
     total_cost = purchase_amount*(1+tax_amount)
     result = "Since you're from {}, your total cost is {}.".format(state, total_cost)
 
-elif #provide conditional for checking state is NY
+elif state == 'NY': #provide conditional for checking state is NY
     tax_amount = .089
     total_cost = purchase_amount*(1+tax_amount)
     result = "Since you're from {}, your total cost is {}.".format(state, total_cost)

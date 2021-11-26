@@ -11,9 +11,9 @@ their guess compares to the answer.
 answer = 13 #provide answer
 guess = 0 #provide guess
 
-if guess <= answer-1: #provide conditional
+if guess < answer: #provide conditional
     result = "Oops!  Your guess was too low."
-elif guess >= answer+1: #provide conditional
+elif guess > answer: #provide conditional
     result = "Oops!  Your guess was too high."
 elif guess == answer: #provide conditional
     result = "Nice!  Your guess matched the answer!"
