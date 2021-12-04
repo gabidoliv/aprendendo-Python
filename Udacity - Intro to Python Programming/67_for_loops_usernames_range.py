@@ -2,7 +2,6 @@
 
 usernames = ["Joey Tribbiani", "Monica Geller", "Chandler Bing", "Phoebe Buffay"]
 
-for name in names range:
-    # name = name.lower().replace(" ", "_") #Não altera
-    
-print(names)
+for i in range(len(usernames)):
+    usernames[i] = usernames[i].lower().replace(" ", "_")
+print(usernames)
