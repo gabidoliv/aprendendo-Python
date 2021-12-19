@@ -4,7 +4,7 @@ word_counter = {} #Cria dicionário vazio
 
 for word in book_title:
     if word not in word_counter:
-        word_counter[word] = 1
+        word_counter[word] = 1 # Se já existe o elemento na lista soma 1 ao valor dele
     else:
-        word_counter[word] += 1
+        word_counter[word] += 1 #Se não existe, seu valor passa a ser 1
 print (word_counter)
