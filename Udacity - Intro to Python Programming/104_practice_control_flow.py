@@ -9,24 +9,9 @@ most_win_director = []
 #Criar dicionario com o número de vitórias de cada diretor
 for year, winnerlist in winners.items:
     for winner in winnerlist:    
-        win_count_dict[winner] = win_count_dict.get(winner, 0) + 1 #Esse dicionario vai ajudar a identificar qual chave tem maior valor (chave = nome do diretor). 
-        # Iterar pelo dicionário para verificar se o valor da chave é maior que a contagem mais alta (highest_count), 
-            # se for, substituí-lo
-        # Ainda sobre essa chave de valor mais alto, 
-            #  adicionar a lista de rastreio most_win_director
-        # Toda vez que houver um valor mais alto que o valor atual de highest_count, 
-            # substituir highest_count pelo novo valor mais alto, 
-            # esvaziar most_win_director 
-            # e substituir pela nova chave (nome do diretor)
-    for key, value in win_count_dict.items():
-        if value > highest_count:
-            highest_count = value
-            most_win_director.clear()
-            most_win_director.append(key)
-        elif value == highest_count:
-            most_win_director.append(key)
-        else:
-            continue
+        win_count_dict[winner] = win_count_dict.get(winner, 0) + 1 
+        highest_count = max(win_count_dict.values())
+        most_win_director = [key for key, value in win_count_dict.items() if value == highest_count]
 print("most_win_director = {}".format(most_win_director))
 
 # TypeError: 'builtin_function_or_method' object is not iterable
